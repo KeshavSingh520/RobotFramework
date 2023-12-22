@@ -2,6 +2,7 @@
 Library   SeleniumLibrary
 Variables   ../pageobjects/HRMHomepage.py
 
+
 *** Keywords ***
 Get All Links From Application
     @{lstLinks}=    Get WebElements    ${lnksNavigation}

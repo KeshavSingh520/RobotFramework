@@ -20,7 +20,7 @@ TC2: Test Keyboard Keys
     Press Keys    ${inputGoogle}    ALT+ENTER
     Sleep    3
 
-TC3: Test Windows
+TC3: Test Windows1
     Go To    https://www.way2automation.com/way2auto_jquery/frames-and-windows.php#load_box
     Click Element    //a[text()='Open Multiple Windows']
     Select Frame    //div[@id='example-1-tab-4']//iframe

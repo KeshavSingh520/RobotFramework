@@ -15,7 +15,6 @@ class RobotListenerV3:
     def start_test(self, test, result):
         print("Test is started")
 
-
     def end_test(self, test, result):
         if not result.passed:
             print('Test "%s" failed: %s' % (result.name, result.message))

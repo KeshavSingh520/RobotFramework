@@ -1,7 +1,6 @@
 class Global:
 
     url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
-
     browser = "chrome"
     # Api EndPoints
     apiTokenEndpoint = "https://accounts.spotify.com/api/token"

@@ -36,6 +36,7 @@ Switch to Window By Url
         END
     END
 
+
 Close Current Browser
     Close Browser
     Print    Browser is closed.

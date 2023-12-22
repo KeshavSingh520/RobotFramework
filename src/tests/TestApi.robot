@@ -16,7 +16,7 @@ ${playlistUrl}  ${Global.getPlayListAPi}
 TC1:Create Spotify Playlist
     [Tags]  sanity
     ${response}=    Post Request Method
-#    Print   ${response}
+#    Print    ${response}
 
 TC2: Get Playlist
     [Tags]  smoke
