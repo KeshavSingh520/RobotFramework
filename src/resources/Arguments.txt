@@ -1,0 +1,5 @@
+--timestampoutputs
+--listener RetryFailed:1
+--outputdir D:\RobotFramework\PyCharmRobotFramework\results
+--include All
+#--variables
