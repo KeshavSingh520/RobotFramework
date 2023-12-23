@@ -1,16 +1,18 @@
 *** Settings ***
 Library  SeleniumLibrary
-Resource    ../commons/LoginHRM.robot
-Resource    ../commons/HRMHomePage.robot
 Resource    ../resources/TokenManager.robot
 Variables  ../resources/config.py
+
+*** Variables ***
+${appTitle}    OrangeHRM
 
 *** Keywords ***
 Launch Browser
     Open Browser    ${Global.url}    browser=${Global.browser}
     Maximize Browser Window
     Set Selenium Implicit Wait    30
-    Print    ${Global.url} application is opened
+    Title Should Be    ${appTitle}
+    Print    ${Global.url} application is opened.
 
 Select from dropdown
     [Arguments]    ${locator}

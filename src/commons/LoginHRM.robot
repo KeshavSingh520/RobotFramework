@@ -1,11 +1,16 @@
 *** Settings ***
 Library   SeleniumLibrary
-Variables   ../pageobjects/LoginHRM.py
+Resource    Resources.robot
 
 
-
+*** Variables ***
+${inputUsername}    //input[@name='username']
+${inputPassword}    //input[@name='password']
+${btnPassword}    //button[@type='submit']
+    
 *** Keywords ***
 Login to HRM
+    Launch Browser
     ${webElementUsername}=    Get WebElement    ${inputUsername}
     Input Text    ${webElementUsername}    Admin
     ${webElementPassword}=    Get WebElement    ${inputPassword}
@@ -13,4 +18,3 @@ Login to HRM
     ${webElementSubmit}=    Get WebElement    ${btnPassword}
     Click Element    ${webElementSubmit}
     ${title}=    Get Title
-    Return From Keyword    ${title}
