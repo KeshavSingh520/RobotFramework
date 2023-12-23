@@ -9,7 +9,7 @@ ${inputGoogle}=   //textarea[@name='q']
 #Alt+Shift+F10 - Run
 *** Test Cases ***
 TC1: Test Orange HRM HomePage
-#    [Tags]      robot:skip
+    [Tags]      sanity
     ${title}=    Login to HRM
     Print    ${title}
     Title Should Be    ${title}
