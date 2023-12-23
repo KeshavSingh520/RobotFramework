@@ -1,6 +1,6 @@
---timestampoutputs
---listener RetryFailed:1
+#--timestampoutputs
+#--listener RetryFailed:1
 --outputdir D:\RobotFramework\PyCharmRobotFramework\results
---include All
+#--include All
 # --variables
 # --test "testcasename" suitename.robot
