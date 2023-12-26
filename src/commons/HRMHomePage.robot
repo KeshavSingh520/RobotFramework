@@ -24,6 +24,6 @@ Navigate to Link
     [Arguments]    ${lnk}
     Click Element    //nav//ul[@class='oxd-main-menu']//span[text()='${lnk}']
     ${url}=    Get Location
-    ${expectedLink}=    Convert To Lower Case    Admin
+    ${expectedLink}=    Convert To Lower Case    ${lnk}
     Should Contain    ${url}    ${expectedLink}
     Print    Navigated to Link ${lnk}
