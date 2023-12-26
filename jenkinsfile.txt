@@ -1,12 +1,12 @@
 pipeline {
-    agent { label "robot" } // run on an agent, which has Robot Framework installed
+    agent any // run on an agent, which has Robot Framework installed
 
     stages {
         stage("Run Robot") {
             steps {
                 // --nostatusrc prevents your job from failing automatically if any
                 // tests fail. This is then later handled with the RF plugin with
-                // pass thresholds
+                // pass thresholds.
                 sh script: "robot --nostatusrc *.robot", returnStatus: true
             }
         }
